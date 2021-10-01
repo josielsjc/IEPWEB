@@ -1,0 +1,23 @@
+#coluna1{
+    height: 100px;
+    border: #E5EFBD solid 1px;
+    background-color: #FFFEDF
+    
+    
+}
+
+
+#coluna2{
+    height: 60px;
+    border-left: purple  solid 1px;;
+    border-top: #919FDF solid 1px;
+    border-bottom: #919FDF solid 1px;
+    border-right: purple  solid 1px;;
+    background-color: #87CEFA;
+}
+
+#linha{
+    height: 30px;
+    border: #07863C solid 1px;
+    background-color: #20B1AA;
+}
