@@ -1,0 +1,80 @@
+
+
+.row{
+    --bs-gutter-x:0rem;
+}
+.container-fluid{
+ /* min-width: 100%; */
+ padding: 0px;
+}
+
+.sessao-cinza{
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sessao-colorida{
+    background-color: lightskyblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 500px;
+    margin-bottom: 40px;
+
+  
+}
+
+.pesquisa{
+    width: 400px;
+    justify-content: right;
+    padding: 20px;
+   
+
+}
+#icone{
+    color: white;
+    border: black;
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+
+.card-body{
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+#iconep{
+    font-size: 40px;
+    color: rgb(95, 95, 95);
+    border: black;
+}
+
+/* .caixa-servico{
+    background-color: #f7f7f7;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px ;
+    padding: 10px;
+    text-align: center;
+
+} */
+
+.card-img-top{
+    min-height:  200px;
+    max-height:  200px;
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+#fot{
+    margin-top: 100px;
+    border-top: solid rgb(12, 12, 12) 2px;
+    background-color: yellow;
+    height: 200px;
+    color:rgb(0, 0, 0);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
+
