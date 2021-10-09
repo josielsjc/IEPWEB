@@ -1,0 +1,49 @@
+#caixa-servicos{
+    text-align: left;
+    border:springgreen solid 2px;
+    margin-bottom: 20px;
+ 
+    
+    
+}
+
+#caixa-servicos-right{
+    text-align: right;
+    border:springgreen solid 2px;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+.row{
+    border:orange solid 2px;
+    min-height: 500px;
+ 
+}
+
+.container{
+    border:red solid 2px;
+    min-height: 600px;
+    min-width: 1000px;
+}
+
+#caixa-titulo{
+ 
+    border:blue solid 2px;
+    height: 50px;
+    
+}
+
+@media (max-width: 768px){
+
+#caixa-servicos-right{
+text-align: center;
+/* display: none; */
+}
+
+#caixa-servicos{
+text-align: center;
+}
+    
+}

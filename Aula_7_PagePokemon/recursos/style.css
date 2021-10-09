@@ -28,9 +28,7 @@ body{
 }
 .figura{
  
-
     height: 500px;
-
     padding: 20px;
 
 }
@@ -46,6 +44,7 @@ footer{
     border: solid 3px;
     padding-top: 20px;
     padding-left: 80px;
+  
 }
 
 .rodape{
@@ -76,7 +75,8 @@ width: 200px;
 
 #banner{
 
-   
+   background-color: red;
+   border:solid red 5px;
     box-shadow: 4px 4px 2px 1px #3d3d3d;
         -webkit-box-shadow: 4px 4px 2px 1px #3d3d3d;
 }

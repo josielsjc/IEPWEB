@@ -1,5 +1,11 @@
 
+.barra{
+    min-width: 30px;
+    min-height: 500px;
+background-color: rgb(145, 145, 145);
+text-align: center;
 
+}
 .row{
     --bs-gutter-x:0rem;
 }
@@ -17,10 +23,15 @@
     background-color: lightskyblue;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 500px;
+    min-height: 500px;
     margin-bottom: 40px;
 
   
+}
+
+#banner{
+    min-width: 500px;
+    max-height: 500px;
 }
 
 .pesquisa{
@@ -38,7 +49,20 @@
     
     
 }
+#caixa-servicos{
+    text-align: left;
+    margin-bottom: 20px;
+ 
+    
+    
+}
 
+#caixa-servicos-right{
+    text-align: right;
+    margin-bottom: 20px;
+    
+    
+}
 .card-body{
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -72,9 +96,63 @@
     margin-top: 100px;
     border-top: solid rgb(12, 12, 12) 2px;
     background-color: yellow;
-    height: 200px;
+    min-height: 200px;
     color:rgb(0, 0, 0);
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
 box-shadow: 5px 5px 15px 5px #000000;
+min-width: none;
 }
 
+footer{
+    background-color: #1F1F1F;
+    color: white;
+    border: solid 3px;
+    padding-top: 20px;
+    min-height: 400px;
+    padding-left: 30px;
+}
+
+.rodape{
+ 
+    
+    background-color: rgb(53, 51, 51);
+    border-right: red solid 2px;
+    border-bottom: black solid 4px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    min-height: 400px;
+    margin-right: 20px;
+    padding:200px;
+  
+}
+
+#menu{
+    margin-top: 25px;
+   
+}
+
+.social{
+    margin-top:40px;
+}
+.saiba{
+  margin-top:40px;
+
+}
+
+.navbar-brand{
+    min-width: 500px;
+}
+
+@media (max-width: 768px){
+
+    #caixa-servicos-right{
+    text-align: center;
+    /* display: none; */
+    }
+    
+    #caixa-servicos{
+    text-align: center;
+    }
+        
+    }
