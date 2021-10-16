@@ -1,0 +1,41 @@
+th:first-child, td:first-child
+{
+    position: sticky;
+    left:0px;
+    background-color: cadetblue !important;
+}
+
+.i{
+    size: 30px;
+}
+
+
+.mensagem{
+    margin-top: 280px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 500px;
+
+}
+
+.espaco{
+    height: 1000px;
+}
+
+.chat{
+    width: 100px;
+    height: 100px;
+    margin-top: 380px;
+
+    position: fixed;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+#aviso{
+    width: ;
+}
