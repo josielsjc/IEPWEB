@@ -23,7 +23,7 @@
 }
 
 footer{
-    background-color: #1F1F1F;
+    
     color: white;
     border: solid 3px;
     padding-top: 20px;
@@ -142,10 +142,37 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
 }
 
-.textmetodo{
-
+.bodi{
+    background-color: rgb(1, 1, 41);
 }
 
+.papel{
+background-color: rgb(0, 0, 0);
+
+}
+.papel2{
+    background-color: white;
+   max-width: 1200px;
+   margin:auto;
+   -webkit-box-shadow: 5px 5px 15px 11px #000000; 
+   box-shadow: 5px 5px 15px 11px #000000;
+    }
+body{
+   
+    background-color: rgb(36, 35, 35) !important;
+
+}
+.contat{
+    color: blanchedalmond;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.formulario{
+    margin-top: 200px;
+    margin-left: 60%;
+    background-color: rgb(221, 220, 220);
+}
 .back1{
     background-color: #1b1b1b;
     margin-top:  1px;
