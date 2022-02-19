@@ -1,0 +1,47 @@
+table{
+    margin-left: 80px;
+    margin:auto;
+}
+th{
+    margin-top:  30px;
+    background-color: aqua;
+    border: solid black;
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+    font-size: 30px;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+
+}
+
+tr{
+    border: solid black;
+}
+
+.caixa{
+    font-size: 30px;
+    background-color: rgb(210, 216, 216);
+}
+
+#calcula{
+    background-color: rgb(107, 105, 105);
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    margin: 50px;
+text-align: center;
+padding:40px;
+}
+
+.frm_caixa{
+    padding-left: 40px;
+}
+
+#enviar{
+    font-size: 20px;
+    margin-top:  10px;
+}
+
