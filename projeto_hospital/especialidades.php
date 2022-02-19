@@ -68,8 +68,8 @@ Bem vindo a página de cadastro de especialidades!
         //BUSCANDO DADOS DO BANCO DE DADOS
         include 'consultas/especialidades/sql_consultar_especialidades.php';
 
-        //ESSE INCLUDE VAI ALIMENTAR A VARIAVEL $resultado_convenios
-        //COM TODOS OS DADOS DOS CONVENIOS
+        //ESSE INCLUDE VAI ALIMENTAR A VARIAVEL $resultado_ESPECIALIDADE
+        //COM TODOS OS DADOS DOS ESPECIALIDADE
 
         //EXIBINDO OS RESULTADOS POR LINHA
         while($row_especialidade = mysqli_fetch_assoc($resultado_especialidade)) {
@@ -83,69 +83,52 @@ Bem vindo a página de cadastro de especialidades!
         
 
 
-              <!-- FORM EXCLUR CONVENIO -->
+              <!-- FORM EXCLUR ESPECIALIDADE -->
               <form method="POST" action="consultas/especialidades/sql_excluir_especialidades.php"> 
               <input class="form-control" type="text" value="<?php echo $row_especialidade['cd_especialidade']; ?>" name="frm_cd_especialidade" hidden>
                     <td>   <button class="btn btn-primary" type="submit"> <i class="fas fa-trash"></i></button> </td>  
-                    </div>      
-                </div>
-            </form>
+              
+    </form>
 
-             <!-- EDITAR CONVENIO -->
+                 <!-- FORM/MODAL EDITAR CONVENIO -->  
 
-             
-             
-
-               
-                    
-                
                 <td>   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal<?php echo $row_especialidade['cd_especialidade']; ?>" data-bs-whatever="@getbootstrap"> <i class="fas fa-pencil-alt"></i></button> </td>  
-                        </div>      
-                    </div>
+                   
 
     
-    <div class="modal fade" id="modal<?php echo $row_especialidade['cd_especialidade']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+                <div class="modal fade" id="modal<?php echo $row_especialidade['cd_especialidade']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
-        <form method="POST" action="consultas/especialidades/sql_editar_especialidades.php"> 
-           
-            <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Especialidade: </label>
-                <input type="text" name="frm_nm_especialidade" value="<?php echo $row_especialidade['nm_especialidade'];?> "class="form-control" id="recipient-name">
-            </div>
-            <div class="mb-3">
-                <label for="message-text" class="col-form-label">SUS:</label>
-                <input type="text" name="frm_sus" maxlength="1" value="<?php echo $row_especialidade['sn_sus'];?> "class="form-control" id="recipient-name">
-            </div>
-            
-        </div>
-        <div class="modal-footer">
-        
-        <input class="form-control" type="text" value="<?php echo $row_especialidade['cd_especialidade'];?>" name="frm_cd_especialidade" hidden>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-         
-            <button class="btn btn-primary" type="submit"> Salvar</button>
+                    <form method="POST" action="consultas/especialidades/sql_editar_especialidades.php"> 
+                        <!-- DENTRO DO MODAL -->
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidade: </label>
+                            <input type="text" name="frm_nm_especialidade" value="<?php echo $row_especialidade['nm_especialidade'];?> "class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">SUS:</label>
+                            <input type="text" name="frm_sus" maxlength="1" value="<?php echo $row_especialidade['sn_sus'];?> "class="form-control" id="recipient-name">
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                    
+                    <input class="form-control" type="text" value="<?php echo $row_especialidade['cd_especialidade'];?>" name="frm_cd_especialidade" hidden>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- SALVAR DADOS EDITADOS DENTRO DO MODEL -->
+                        <button class="btn btn-primary" type="submit"> Salvar</button>
         </form>
         </div>
         </div>
     </div>
     </div>
-              
-                       
-
-
-           
  
-
-             
-            </tr>
-
    <?php } ?>  
   
 </table>
