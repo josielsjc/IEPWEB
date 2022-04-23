@@ -44,6 +44,9 @@
                 <li class="nav-item">
                 <a class="nav-link" href="especialidades.php">Especialidades</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="pacientes.php">Pacientes</a>
+                </li>
             </ul>
             </div>
         </div>
